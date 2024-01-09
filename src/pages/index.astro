@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Segment from "../components/Segment.astro";
+import News from "../components/News.astro";
+import Publications from "../components/Publications.astro";
+import Contact from "../components/Contact.astro";
+import Software from "../components/Software.astro";
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="mt-5">
+    <div class="flex flex-row justify-between items-center mb-10">
+      <div>
+        <div class="text-5xl font-bold">Marcel Steinmetz</div>
+        <div class="text-3xl py-3">Post-Doctoral Researcher</div>
+        </div>
+      <div>
+        <Image width={220} height={200} format="webp" src="/wordcloud.png" alt="" class="mask mask-squircle" />
+      </div>
+    </div>
+
+    <div class="py-2">
+      <text class="text-lg">
+        Marcel Steinmetz is a postdoc at <a href="https://www.laas.fr" target="_blank">LAAS-CNRS</a> and <a href="https://aniti.univ-toulouse.fr" target="_blank">ANITI, University of Toulouse</a>. Prior to that, he did a postdoc in the <a href="https://fai.cs.uni-saarland.de" target="_blank">Foundations of Artificial Intelligence</a> group headed by <a href="https://fai.cs.uni-saarland.de/people/hoffmann/" target="_blank">Jörg Hoffmann</a> at Saarland University, where he also obtained his Ph.D.
+      </text>
+    </div>
+
+    <div class="py-2">
+      <text class="text-lg">
+        He has been working on various aspects gravitating around AI planning, amongst others, <span class="italic font-medium">conflict-driven learning</span> techniques in AI planning akin to clause learning in SAT; <span class="italic font-medium">MDP probabilistic planning</span> and <span class="italic font-medium">quantiative model checking</span>; planning with <span class="italic font-medium">description logics</span>; <span class="italic font-medium">explainable AI planning</span>; <span class="italic font-medium">simulated network penetration testing</span> and <span class="italic font-medium">web-security analysis</span> via AI planning methods; and most recently on <span class="italic font-medium">testing</span> and <span class="italic font-medium">verifying machine-learned policies</span>.
+      </text>
+    </div>
+  </div>
+
+  <Segment id="news" title="News">
+    <News />
+  </Segment>
+
+  <Segment id="publications" title="Publications">
+    <Publications/>
+  </Segment>
+
+  <Segment id="software" title="Software">
+    <Software/>
+  </Segment>
+
+  <Segment id="contact" title="Contact">
+    <Contact/>
+  </Segment>
+
+</BaseLayout>
+

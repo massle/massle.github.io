@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+const dateOptions = { year: 'numeric', month: 'numeric' };
+const recentNews = (await getCollection("news")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 5);
+---
+<div className="overflow-x-auto">
+  <table className="table">
+    <tbody>
+    {recentNews.map(async (news) => {
+      const {Content} = await news.render();
+      return (
+        <tr>
+          <th class="pr-6">{news.data.date.toLocaleDateString("fr", dateOptions)}</th>
+          <td><Content/></td>
+        </tr>
+      );
+      })
+    }
+    </tbody>
+  </table>
+</div>

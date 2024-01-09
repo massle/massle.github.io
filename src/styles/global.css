@@ -1,0 +1,8 @@
+.time-line-container>div:last-child .education__time>.education__line {
+    display: none;
+}
+
+td,th {
+  vertical-align: top;
+  padding: 0px 0px 15px 10px;
+}

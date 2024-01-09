@@ -1,0 +1,28 @@
+---
+const { title, links, badges } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<div
+  class="rounded-lg bg-base-100 transition ease-in-out shadow-md"
+>
+  <div class="hero-content flex-col md:flex-row">
+    <div class="grow w-full">
+      <h1 class="text-xl font-bold flex flex-row items-center gap-1">
+        <div>{title}</div>
+        {badges && badges.map((badge) => <div class="badge badge-ghost font-base font-normal">{badge}</div> )}
+      </h1>
+      <p class="py-1 text-1xl"><slot/></p>
+      <div class="card-actions justify-end">
+        { links.map(([label, url, mark], i) => {
+          const classes = "badge " + ((mark || i === 0) ? "badge-outline" : "");
+          return (
+            <a href={url} target="_blank" class={classes}>
+              {label}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</div>
