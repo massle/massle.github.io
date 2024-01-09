@@ -1,0 +1,39 @@
+Analyzing neural network behavior through deep statistical model checking.
+A Theory of Merge-and-Shrink for Stochastic Shortest Path Problems.
+Lifted Stackelberg Planning.
+Cartesian Abstractions and Saturated Cost Partitioning in Probabilistic Planning.
+Expressivity of Planning with Horn Description Logic Ontologies.
+Classical Planning with Avoid Conditions.
+Pattern Selection Strategies for Pattern Databases in Probabilistic Planning.
+Debugging a Policy: Automatic Action-Policy Testing in AI Planning.
+Neural Network Action Policy Verification via Predicate Abstraction.
+Glyph-Based Visual Analysis of Q-Leaning Based Action Policy Ensembles on Racetrack.
+Faster Stackelberg Planning via Symbolic Search and Information Sharing.
+Pattern Databases for Goal-Probability Maximization in Probabilistic Planning.
+Why Do I Have to Take Over Control? Evaluating Safe Handovers with Advance Notice and Explanations in HAD.
+Making DL-Lite Planning Practical.
+Bridging the Gap Between Probabilistic Model Checking and Probabilistic Planning: Survey, Compilations, and Empirical Comparison.
+A New Approach to Plan-Space Explanation: Analyzing Plan-Property Dependencies in Oversubscription Planning.
+Let's Learn Their Language? A Case for Planning with Automata-Network Languages from Model Checking.
+Deep Statistical Model Checking.
+Plan-Space Explanation via Plan-Property Dependencies: Faster Algorithms & More Powerful Properties.
+TraceVis: Towards Visualization for Deep Statistical Model Checking.
+Towards Dynamic Dependable Systems Through Evidence-Based Continuous Certification.
+Bridging the Gap between Abstractions and Critical-Path Heuristics via Hypergraphs.
+Towards automated network mitigation analysis.
+The 2019 Comparison of Tools for the Analysis of Quantitative Formal Models - (QComp 2019 Competition Report).
+Stackelberg Planning: Towards Effective Leader-Follower State Space Search.
+Compiling Probabilistic Model Checking into Probabilistic Planning.
+Simulated Penetration Testing as Contingent Planning.
+On Stubborn Sets and Planning with Resources.
+Formally Reasoning about the Cost and Efficacy of Securing the Email Infrastructure.
+LP Heuristics over Conjunctions: Compilation, Convergence, Nogood Learning.
+State space search nogood learning: Online refinement of critical-path dead-end detectors in planning.
+Beyond Red-Black Planning: Limited-Memory State Variables.
+Critical-Path Dead-End Detection versus NoGoods: Offline Equivalence and Online Learning.
+Search and Learn: On Dead-End Detectors, the Traps they Set, and Trap Learning.
+Combining the Delete Relaxation with Critical-Path Heuristics: A Direct Characterization.
+Goal Probability Analysis in Probabilistic Planning: Exploring and Enhancing the State of the Art.
+Towards Clause-Learning State Space Search: Learning to Recognize Dead-Ends.
+Revisiting Goal Probability Analysis in Probabilistic Planning.
+Partial Delete Relaxation, Unchained: On Intractable Red-Black Planning and Its Applications.
