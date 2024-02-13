@@ -15,7 +15,7 @@ if (booktitle) {
   <div class="">{authors.join("; ")}</div>
   <div class="italic">{booktitle || journal}. {volume ? `${year}, ${volume}, ` : ""}{pages}</div>
   <div class="flex flex-row gap-1">
-    <a href={url} target="_blank" class="badge badge-primary">PDF</a>
+    {url && <a href={url} target="_blank" class="badge badge-primary">PDF</a>}
     {tr && <a href={tr} target="_blank" class="badge badge-primary">Tech. Report</a>}
     {code && <a href={code} target="_blank" class="badge badge-primary">Code</a>}
     {type === "conference" && <div class="badge badge-info">conference</div>}
