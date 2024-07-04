@@ -1,5 +1,5 @@
 ---
-id: "conf_ecai_KlossnerSS23"
+id: "conf_ecai_KloessnerSS23"
 title: "Cartesian Abstractions and Saturated Cost Partitioning in Probabilistic Planning."
 authors: ["Thorsten Klößner", "Jendrik Seipp", "Marcel Steinmetz"]
 year: "2023"
