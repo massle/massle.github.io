@@ -9,5 +9,6 @@ type: "conference"
 bibType: "inproceedings"
 url: "https://doi.org/10.3233/FAIA240618"
 doi: "10.3233/FAIA240618"
+code: "https://doi.org/10.5281/zenodo.12699090"
 ---
 

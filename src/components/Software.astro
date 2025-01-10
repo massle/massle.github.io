@@ -3,6 +3,26 @@ import HorizontalCard from "./HorizontalCard.astro";
 ---
 <div class="flex flex-col gap-3">
 <HorizontalCard
+  title="Plado"
+  badges={[
+    "python"
+  ]}
+  links={[
+    ["Github", "https://github.com/massle/plado"]
+  ]}> 
+    (P)PDDL python library, including a PDDL parser, lifted successor generator,
+    and a generic datalog engine. The library fully supports fluents, derived
+    predicates (axioms), as well as probabilistic action effects. It features
+    all components to write an automated planner in python from scratch.
+    Example usages are provided in the <span class="font-mono">examples/</span>
+    folder. Plado is available on pypi and can be installed via <span
+      class="font-mono">pip install plado</span>. Plado is used as part of the
+    <a
+      href="https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit"
+      target="_blank">Beluga AI challenge toolkit</a>.
+</HorizontalCard>
+
+<HorizontalCard
   title="PFD (Probabilistic Fast Downward)"
   badges={[
     "cpp",
@@ -11,6 +31,7 @@ import HorizontalCard from "./HorizontalCard.astro";
   links={[
     ["Thesis version", "https://zenodo.org/records/6992688/files/code.zip?download=1",],
     ["JAIR16 version", "/fd-prob-jair.zip"],
+    ["Github", "https://github.com/fai-saarland/probfd"]
   ]}>
   Extension of the <a href="https://www.fast-downward.org" target="_blank"
     class="link link-info">Fast Downward</a> planning system by the support of
