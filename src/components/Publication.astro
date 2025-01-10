@@ -1,5 +1,5 @@
 ---
-const { id, title, authors, pages, year, volume, booktitle, journal, type, bibType, url, doi, tr, code } = Astro.props;
+const { id, title, authors, pages, year, volume, booktitle, journal, type, bibType, url, doi, tr, code, artifact } = Astro.props;
 var confNick = null;
 if (booktitle) {
   const i = booktitle.lastIndexOf(',');
@@ -18,6 +18,7 @@ if (booktitle) {
     {url && <a href={url} target="_blank" class="badge badge-primary">PDF</a>}
     {tr && <a href={tr} target="_blank" class="badge badge-primary">Tech. Report</a>}
     {code && <a href={code} target="_blank" class="badge badge-primary">Code</a>}
+    {artifact && <a href={artifact} target="_blank" class="bade badge-primary text-sm px-2">Artifact</a>}
     {type === "conference" && <div class="badge badge-info">conference</div>}
     {type === "journal" && <div class="badge badge-success">journal</div>}
     {type === "workshop" && <div class="badge">workshop</div>}

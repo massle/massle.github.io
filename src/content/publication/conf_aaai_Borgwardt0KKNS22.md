@@ -9,4 +9,6 @@ booktitle: "Thirty-Sixth AAAI Conference on Artificial Intelligence, AAAI 2022"
 pages: "5503-5511"
 type: "conference"
 bibType: "inproceedings"
+code: "https://gitlab.perspicuous-computing.science/a.kovtunova/pddl-horndl"
+tr: "https://arxiv.org/abs/2203.09361"
 ---

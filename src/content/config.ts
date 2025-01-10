@@ -15,6 +15,7 @@ const publicationSchema = z.object({
     doi: z.string().optional(),
     tr: z.string().optional(),
     code: z.string().optional(),
+    artifact: z.string().optional(),
 });
 
 const newsSchema = z.object({

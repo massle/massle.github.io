@@ -10,4 +10,5 @@ pages: "407-426"
 volume: "25"
 type: "journal"
 bibType: "article"
+artifact: "https://doi.org/10.5281/zenodo.7071405"
 ---
