@@ -1,0 +1,3 @@
+{% macro bibstrip(in) %}
+{{ in | replace(from="---",to="—") | replace(from="--", to="-") | replace(from="{",to="") | replace(from="}", to="") | replace(from='\"a', to="ä") | replace(from='\"u', to="ü") | replace(from='\"o', to="ö") | replace(from="\'e", to="é") | replace(from="\'A", to="Á") | replace(from="\ss", to="ß") | replace(from="\'\i", to="í") | replace(from="\'y", to="ý") | replace(from="\&", to="&") | safe }}
+{% endmacro bibstrip %}

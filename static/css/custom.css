@@ -1,0 +1,35 @@
+.nav-name {
+  place-self: start;
+  justify-self: start;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.bib-item div {
+  margin-bottom: 3px;
+}
+
+.bib-item div:last-child {
+  margin-bottom: 15px;
+}
+
+.bib-title {
+  font-weight: bold;
+}
+
+.bib-authors {
+
+}
+
+.bib-conf {
+  font-style: italic;
+}
+
+.bib-aux {
+  display: flex;
+  gap: 24px;
+}
+
+.bib-doi {
+  display: none;
+}

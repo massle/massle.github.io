@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{%- import 'macros.html' as macros -%}
+
+{% block content %}
+
+{% set bib = load_data(path="biblio.bib", format="bibtex", required=false) %}
+{% set bib = bib.bibliographies | sort(attribute="citation_key") | sort(attribute="tags.year") | reverse  %} 
+{% set bibByYear = bib | group_by(attribute="tags.year") %}
+
+<h1>Publications</h1>
+
+<div class="reference-year-list">
+    <a href="/publications">
+        All
+    </a>
+  {% for year, ignored in bibByYear %}
+    | 
+    <a href="/publications/{{year}}">
+        {{ year }}
+    </a>
+  </li> 
+  {% endfor %}
+</div>
+
+{% for year, refs in bibByYear %}
+{% if not page.extra.year or page.extra.year == year %}
+<div>
+    <h3>{{year}}</h3>
+  <ul class="content-list">
+  {% for ref in refs %}
+    {% set aux = ref.tags.url is defined or ref.tags.doi is defined or ref.tags.tr is defined or ref.tags.code is defined %}
+    <li class="title-list bib-item">
+        <div class="bib-title">{{ macros::bibstrip(in=ref.tags.title) }}</div>
+        <div class="bib-authors">{{  macros::bibstrip(in=ref.tags.author) }}</div>
+        <div class="bib-conf">
+        {% if ref.tags.booktitle %}
+          {{ macros::bibstrip(in=ref.tags.booktitle) }}
+        {% elif ref.tags.journal %}
+          {{ macros::bibstrip(in=ref.tags.journal) }}
+        {% elif ref.entry_type == "phdthesis" %}
+          Ph.D. Thesis
+        {% endif %}
+        </div>
+        {% if aux %}
+        <div class="bib-aux">
+        {% if ref.tags.url %}<a href="{{ref.tags.url}}" class="bib-url">🖺 PDF</a>{% endif %}
+        {% if ref.tags.doi %}<div class="bib-doi">{{ref.tags.doi}}</div>{% endif %}
+        {% if ref.tags.tr %}<a href="{{ref.tags.tr}}" class="bib-tr">🗐 TR</a>{% endif %}
+        {% if ref.tags.code %}<a href="{{ref.tags.code}}" class="bib-code">🖫 Code</a>{% endif %}
+        </div>
+        {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+{% endfor %}
+
+{% endblock %}
